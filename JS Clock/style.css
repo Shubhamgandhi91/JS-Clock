@@ -1,0 +1,61 @@
+/* page view */
+html {
+    background-image: url('woodenbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* flex */
+body
+{   
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh; 
+}
+
+.clock 
+{
+    width: 30rem;
+    height:30rem;
+    border: 20px solid rgb(233, 233, 233);
+    border-radius: 50%;
+    margin:50px 0px 20px 370px;
+    padding:2rem;
+    position:absolute;
+    box-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face
+{
+    position: relative;
+    width: 100%;
+    height:100%;
+    transform: translate(-3px) ; /* account for the height of the clock hands */
+}
+
+.hand
+{ 
+    width: 50%;
+    height:5.5px;
+    position: absolute;
+    background: rgb(2, 44, 24);
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+
+
+
+
+
